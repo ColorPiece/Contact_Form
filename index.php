@@ -67,7 +67,7 @@ if(!empty($esc['confirm'])) {
 		$_SESSION['page'] = true;
 	}
 
-} else if(!empty($esc['submit'])) {
+} elseif(!empty($esc['submit'])) {
 	session_start();
 	if(!empty($_SESSION['page']) && $_SESSION['page'] === true) {
 		// セッション削除
@@ -150,7 +150,7 @@ if($flag === 1) {
 </form>
 <?php
 
-} else if($flag === 2) {
+} elseif($flag === 2) {
 // 送信完了画面のHTMLコード
 ?>
 <p class="complete">送信が完了しました。</p>
